@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 # MSC_V2X Manual Türkçe
 
 ## 5. Profil Tanımları

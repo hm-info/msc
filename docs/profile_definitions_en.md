@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 # MSC_V2X Manual English
 
 ## 5. Profile Definitions
