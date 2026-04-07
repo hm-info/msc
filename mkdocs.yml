@@ -1,0 +1,33 @@
+site_name: MSC Manual
+site_description: MSC Manual
+site_url: https://hm-info.github.io/msc/
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: tr
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: blue-grey
+      accent: blue-grey
+
+nav:
+  - Ana Sayfa / Home: index.md
+  - 🇹🇷 Türkçe:
+    - End Milling Ayarları: endmilling_settings_tr.md
+    - Makro Eşleştirme: macro_mapping_tr.md
+    - Profil Tanımları: profile_definitions_tr.md
+  - 🇬🇧 English:
+    - End Milling Settings: endmilling_settings_en.md
+    - Macro Mapping: macro_mapping_en.md
+    - Profile Definitions: profile_definitions_en.md
+
+use_directory_urls: false
+
+plugins:
+  - search
