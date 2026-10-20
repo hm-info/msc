@@ -1,4 +1,14 @@
+---
+title: MSC — Macro Mapping
+lang: en
+pdf: msc-macro-mapping-en.pdf
+---
+
 # MAPPING TABLE
+
+<div class="document-tools" markdown="1">
+[Türkçe](macro_mapping_tr.md) · **[Download PDF](downloads/msc-macro-mapping-en.pdf)**
+</div>
 ## MSC
 
 **Date:** December 30, 2025  
@@ -26,7 +36,7 @@
    - 3.1) [IGNORED MACRO](#31-ignored-macro)
    - 3.2) [SINGLE MACRO IGNORE](#32-single-macro-ignore)
    - 3.3) [ADD REVERSE MACRO](#33-add-reverse-macro)
-4. [IMPORT/EXPORT](#4-import-export)
+4. [IMPORT/EXPORT](#4-importexport)
 
 ---
 

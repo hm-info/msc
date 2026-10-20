@@ -1,6 +1,14 @@
+---
+title: NR241 / NR242 / NR210 — İş Dosyası Rehberi
+lang: tr
+pdf: msc-nr-job-file-tr.pdf
+---
+
 # NR241 / NR242 / NR210 — İş Dosyası Rehberi
 
-[English](nr_job_file_en.md)
+<div class="document-tools" markdown="1">
+[English](nr_job_file_en.md) · **[PDF indir](downloads/msc-nr-job-file-tr.pdf)**
+</div>
 
 Bu rehber, **MSC arayüzü kullanılan NR241, NR242, NR210 ve bu formatı kullanan varyasyonlarının** iş dosyasını açıklar. Referans, `NR24X- job file description.xlsx` belgesindeki alan tanımlarıdır. Her veri satırı bir kesilecek parçayı, aynı çubuk numarasını taşıyan satırlar ise aynı çubuktan üretilecek parçaları temsil eder.
 
@@ -76,17 +84,27 @@ Kaynak belge son hanenin ondalık olduğu kuralını `ksnbar` ve `ktnbar` için 
 Her işlem **18 karakterlik** bir bloktur. Aynı parçada birden fazla işlem varsa bloklar art arda yazılır.
 
 ```text
-H0 | 020101 | 05000 | 01000
+H | 001 | 02 | 03 | 05000 | 01000
 ```
 
 Dikey çizgiler yalnız açıklama içindir; gerçek alanda bulunmaz.
 
 | Bölüm | Karakter sırası | Uzunluk | Açıklama |
 |---|---|---:|---|
-| `H0` | 1–2 | 2 | Sabit başlangıç |
-| `020101` | 3–8 | 6 | İşlem tipi / işlem kodu |
+| `H` | 1 | 1 | Sabit makro başlangıç karakteri |
+| `001` | 2–4 | 3 | Tool kodu |
+| `02` | 5–6 | 2 | Operasyon kodu |
+| `03` | 7–8 | 2 | Aksesuar kodu |
 | `05000` | 9–13 | 5 | İşlem konumu: **500,0 mm** |
 | `01000` | 14–18 | 5 | Kanal boyu: **100,0 mm** |
+
+İlk 8 karakter olan **`H0010203`**, `H` + Tool `001` + Operasyon `02` + Aksesuar `03` olarak okunur. Baştaki sıfırları koruyun. Bu örneğin tam 18 karakterlik gösterimi:
+
+```text
+H00102030500001000
+```
+
+Sabit olan başlangıç yalnızca **`H`** karakteridir; sonraki `0`, üç haneli Tool kodunun parçasıdır. Sonraki 10 hane, 5 haneli konum ve 5 haneli kanal boyundan oluşur.
 
 ### Su tahliye / kanal örneği
 
@@ -94,7 +112,7 @@ Dikey çizgiler yalnız açıklama içindir; gerçek alanda bulunmaz.
 H00201010500001000
 ```
 
-`020101` işlem tipinde konum **500,0 mm**, kanal boyu **100,0 mm**'dir. Su tahliye veya kanal işleminde konum, **işlemin başlangıç konumunu** gösterir.
+Bu örnekte Tool **`002`**, Operasyon **`01`**, Aksesuar **`01`**; konum **500,0 mm**, kanal boyu **100,0 mm**'dir. Su tahliye veya kanal işleminde konum, **işlemin başlangıç konumunu** gösterir.
 
 ### Delik örneği
 
@@ -102,7 +120,7 @@ H00201010500001000
 H01601011000000000
 ```
 
-`160101` işlem tipinde konum **1000,0 mm**'dir. Son beş hane `00000` olduğundan kanal boyu yoktur. Su tahliye / kanal olmayan bu örnekte konum, **delik merkezini** gösterir.
+Bu örnekte Tool **`016`**, Operasyon **`01`**, Aksesuar **`01`**; konum **1000,0 mm**'dir. Son beş hane `00000` olduğundan kanal boyu yoktur. Su tahliye / kanal olmayan bu örnekte konum, **delik merkezini** gösterir.
 
 ### Aynı parçada birden fazla işlem
 
@@ -126,7 +144,7 @@ Bu kodlar referans belgenin örnekleridir; her profil ve makine için evrensel b
 2. Sütun başlıklarını ve satırlardaki alan sayısını karşılaştırın; boş alanlar sonraki sütunları kaydırmamalıdır.
 3. Çubuk numarası, çubuk içi parça sırası, çubuk / parça boyları ve kesim açılarını kontrol edin.
 4. Profil ve ana profil kodlarının makinede doğru tanımlarla eşleştiğini doğrulayın.
-5. `nccode` bloklarının 18 karakterlik yapısını, işlem kodunu, konumunu ve gerekiyorsa kanal boyunu kontrol edin; baştaki sıfırları koruyun.
+5. `nccode` bloklarının 18 karakterlik yapısını, Tool / Operasyon / Aksesuar kodlarını, konumunu ve gerekiyorsa kanal boyunu kontrol edin; baştaki sıfırları koruyun.
 6. Aktarımdan sonra parça listesinde boyları ve işlem görünümünü kontrol edin.
 
 [MSC ana sayfası](index.md) · [Makro Eşleştirme](macro_mapping_tr.md) · [Profil Tanımları](profile_definitions_tr.md)

@@ -1,4 +1,14 @@
+---
+title: MSC — Kertme Ayarları
+lang: tr
+pdf: msc-endmilling-settings-tr.pdf
+---
+
 # KERTME
+
+<div class="document-tools" markdown="1">
+[English](endmilling_settings_en.md) · **[PDF indir](downloads/msc-endmilling-settings-tr.pdf)**
+</div>
 
 ## PLC
 

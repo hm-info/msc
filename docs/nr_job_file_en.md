@@ -1,6 +1,14 @@
+---
+title: NR241 / NR242 / NR210 — Job File Guide
+lang: en
+pdf: msc-nr-job-file-en.pdf
+---
+
 # NR241 / NR242 / NR210 — Job File Guide
 
-[Türkçe](nr_job_file_tr.md)
+<div class="document-tools" markdown="1">
+[Türkçe](nr_job_file_tr.md) · **[Download PDF](downloads/msc-nr-job-file-en.pdf)**
+</div>
 
 This guide describes the job file used by **NR241, NR242, NR210 and variants using this format with the MSC interface**. Field definitions come from `NR24X- job file description.xlsx`. Each data row represents one part to be cut; rows with the same bar number represent parts produced from the same bar.
 
@@ -76,17 +84,27 @@ The source defines the final digit as the decimal place for `ksnbar` and `ktnbar
 Each operation is an **18-character** block. For multiple operations on the same part, concatenate the blocks.
 
 ```text
-H0 | 020101 | 05000 | 01000
+H | 001 | 02 | 03 | 05000 | 01000
 ```
 
 Vertical bars are explanatory and are not part of the actual field.
 
 | Section | Character positions | Length | Meaning |
 |---|---|---:|---|
-| `H0` | 1–2 | 2 | Fixed prefix |
-| `020101` | 3–8 | 6 | Operation type / code |
+| `H` | 1 | 1 | Fixed macro start character |
+| `001` | 2–4 | 3 | Tool code |
+| `02` | 5–6 | 2 | Operation code |
+| `03` | 7–8 | 2 | Accessory code |
 | `05000` | 9–13 | 5 | Operation position: **500.0 mm** |
 | `01000` | 14–18 | 5 | Slot length: **100.0 mm** |
+
+The first 8 characters, **`H0010203`**, mean `H` + Tool `001` + Operation `02` + Accessory `03`. Preserve leading zeros. The full 18-character example is:
+
+```text
+H00102030500001000
+```
+
+Only **`H`** is the fixed start character. The following `0` belongs to the three-digit Tool code. The remaining 10 digits contain the five-digit position and five-digit slot length.
 
 ### Drainage / slot example
 
@@ -94,7 +112,7 @@ Vertical bars are explanatory and are not part of the actual field.
 H00201010500001000
 ```
 
-Operation type `020101` has position **500.0 mm** and slot length **100.0 mm**. For drainage or a slot, the position indicates the **start of the operation**.
+This example uses Tool **`002`**, Operation **`01`** and Accessory **`01`**, with position **500.0 mm** and slot length **100.0 mm**. For drainage or a slot, the position indicates the **start of the operation**.
 
 ### Hole example
 
@@ -102,7 +120,7 @@ Operation type `020101` has position **500.0 mm** and slot length **100.0 mm**. 
 H01601011000000000
 ```
 
-Operation type `160101` has position **1000.0 mm**. The last five digits are `00000`, so there is no slot length. In this non-drainage / non-slot example, the position indicates the **hole centre**.
+This example uses Tool **`016`**, Operation **`01`** and Accessory **`01`**, with position **1000.0 mm**. The last five digits are `00000`, so there is no slot length. In this non-drainage / non-slot example, the position indicates the **hole centre**.
 
 ### Multiple operations on the same part
 
@@ -126,7 +144,7 @@ Dealer, customer, order, profile and image-path values are fictitious. The separ
 2. Compare the headers and field count in every row; empty fields must not shift later values.
 3. Check bar numbers, part sequence within each bar, bar / part lengths and cutting angles.
 4. Verify that profile and main-profile codes match the correct machine definitions.
-5. Check the 18-character `nccode` blocks, operation codes, positions and slot lengths where applicable. Preserve leading zeros.
+5. Check the 18-character `nccode` blocks, Tool / Operation / Accessory codes, positions and slot lengths where applicable. Preserve leading zeros.
 6. After import, review the part lengths and machining display.
 
 [MSC home](index.md) · [Macro Mapping](macro_mapping_en.md) · [Profile Definitions](profile_definitions_en.md)

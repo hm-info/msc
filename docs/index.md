@@ -4,6 +4,8 @@
 
 Field definitions, bar and part sequence, cutting dimensions and the `nccode` machining field for NR-series machines using this file format.
 
+All guides include a **Download PDF / PDF indir** button. PDFs are updated automatically with the online content.
+
 - [English](nr_job_file_en.md)
 - [Türkçe](nr_job_file_tr.md)
 - [Illustrative CSV / Temsili CSV](downloads/NR_Series_Job_Example.csv)

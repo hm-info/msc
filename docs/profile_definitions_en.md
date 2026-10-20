@@ -1,4 +1,14 @@
+---
+title: MSC — Profile Definitions
+lang: en
+pdf: msc-profile-definitions-en.pdf
+---
+
 # MSC_V2X Manual English
+
+<div class="document-tools" markdown="1">
+[Türkçe](profile_definitions_tr.md) · **[Download PDF](downloads/msc-profile-definitions-en.pdf)**
+</div>
 
 ## 5. Profile Definitions
 

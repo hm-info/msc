@@ -1,4 +1,14 @@
+---
+title: MSC — Makro Eşleştirme
+lang: tr
+pdf: msc-macro-mapping-tr.pdf
+---
+
 # EŞLEŞME TABLOSU (Mapping Table)
+
+<div class="document-tools" markdown="1">
+[English](macro_mapping_en.md) · **[PDF indir](downloads/msc-macro-mapping-tr.pdf)**
+</div>
 ## MSC
 
 **Tarih:** 30 Aralık 2025  
@@ -9,16 +19,16 @@
 
 ## İçindekiler
 
-1. [GİRİŞ](#1-giriş)
+1. [GİRİŞ](#1-giris)
 2. [MENU KULLANIMI](#2-menu-kullanimi)
    - 2.1) [MAKRO EKLE](#21-makro-ekle)
-   - 2.2) [MAKRO GÜNCELLEME](#22-makro-güncelleme)
+   - 2.2) [MAKRO GÜNCELLEME](#22-makro-guncelleme)
    - 2.3) [MAKROYU SİL](#23-makroyu-sil)
-   - 2.4) [İÇE AKTAR](#24-içe-aktar)
-   - 2.5) [DIŞA AKTAR](#25-dışa-aktar)
-   - 2.6) [PROFİL SEÇİMİ](#26-profil-seçimi)
+   - 2.4) [İÇE AKTAR](#24-ice-aktar)
+   - 2.5) [DIŞA AKTAR](#25-disa-aktar)
+   - 2.6) [PROFİL SEÇİMİ](#26-profil-secimi)
    - 2.7) [EVRENSEL MAKRO EKLEME](#27-evrensel-makro-ekleme)
-   - 2.8) [DİĞERLERİNİ YOK SAY MAKROSU EKLEME](#28-diğerlerini-yok-say-makrosu-ekleme)
+   - 2.8) [DİĞERLERİNİ YOK SAY MAKROSU EKLEME](#28-digerlerini-yok-say-makrosu-ekleme)
    - 2.9) [TERSLENECEK MAKRO EKLEME](#29-terslenecek-makro-ekleme)
    - 2.10) [AKTIF MAKRO TANIMI](#210-aktif-makro-tanimi)
    - 2.11) [TERSLENECEK MAKRO TANIMI](#211-terslenecek-makro-tanimi)
@@ -26,7 +36,7 @@
    - 3.1) [YOKSAYILACAK MAKRO](#31-yoksayilacak-makro)
    - 3.2) [TEK MAKRO YOKSAYMA](#32-tek-makro-yoksayma)
    - 3.3) [TERSLENECEK MAKRO EKLEME](#33-terslenecek-makro-ekleme)
-4. [İÇE/DIŞA AKTARIM](#4-içe-dışa-aktarim)
+4. [İÇE/DIŞA AKTARIM](#4-icedisa-aktarim)
 
 ---
 
