@@ -1,5 +1,9 @@
 # MSC Manual
 
+Topic navigation: Getting started → Job files → NR241 / NR242 / NR210; Machine settings → Profile definitions, Macro mapping, End milling settings. The Turkish home page is `index.html`; the English home page is `home-en.html`. The header language switch opens the same topic in the other language. Existing guide URLs remain valid.
+
+Konu menüsü: Başlangıç → İş dosyaları → NR241 / NR242 / NR210; Makine ayarları → Profil tanımları, Makro eşleştirme, Kertme ayarları. Üst dil seçimi açık konuyu korur. Ana sayfalar her dilde dört rehber kartı içerir; PDF indirme bağlantıları rehberlerin başındadır.
+
 ## 📖 Documentation
 
 <https://hm-info.github.io/msc/>

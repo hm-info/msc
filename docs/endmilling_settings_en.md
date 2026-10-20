@@ -4,7 +4,7 @@ lang: en
 pdf: msc-endmilling-settings-en.pdf
 ---
 
-# END MILLING
+# End Milling Settings
 
 <div class="document-tools" markdown="1">
 [Türkçe](endmilling_settings_tr.md) · **[Download PDF](downloads/msc-endmilling-settings-en.pdf)**

@@ -1,14 +1,15 @@
-site_name: MSC Manual
-site_description: MSC Manual
+site_name: MSC Kullanım Rehberi
+site_description: MSC arayüzü kullanan makineler için iş dosyaları, profil, makro eşleştirme ve kertme ayarları
 site_url: https://hm-info.github.io/msc/
 
 docs_dir: docs
 
 theme:
   name: material
+  custom_dir: overrides
   language: tr
   features:
-    - navigation.tabs
+    - navigation.expand
     - navigation.top
     - search.highlight
   palette:
@@ -17,19 +18,22 @@ theme:
       accent: blue-grey
 
 nav:
-  - Ana Sayfa / Home: index.md
-  - 🇹🇷 Türkçe:
-    - İş Dosyaları:
-      - NR241 / NR242 / NR210: nr_job_file_tr.md
-    - End Milling Ayarları: endmilling_settings_tr.md
-    - Makro Eşleştirme: macro_mapping_tr.md
-    - Profil Tanımları: profile_definitions_tr.md
-  - 🇬🇧 English:
-    - Job Files:
-      - NR241 / NR242 / NR210: nr_job_file_en.md
-    - End Milling Settings: endmilling_settings_en.md
-    - Macro Mapping: macro_mapping_en.md
-    - Profile Definitions: profile_definitions_en.md
+  - Türkçe:
+      - Başlangıç: index.md
+      - İş Dosyaları:
+          - NR241 / NR242 / NR210: nr_job_file_tr.md
+      - Makine Ayarları:
+          - Profil Tanımları: profile_definitions_tr.md
+          - Makro Eşleştirme: macro_mapping_tr.md
+          - Kertme Ayarları: endmilling_settings_tr.md
+  - English:
+      - Getting Started: home-en.md
+      - Job Files:
+          - NR241 / NR242 / NR210: nr_job_file_en.md
+      - Machine Settings:
+          - Profile Definitions: profile_definitions_en.md
+          - Macro Mapping: macro_mapping_en.md
+          - End Milling Settings: endmilling_settings_en.md
 
 use_directory_urls: false
 
@@ -41,6 +45,17 @@ markdown_extensions:
 
 hooks:
   - hooks/pdf_export.py
+  - hooks/navigation.py
+
+extra:
+  alternate:
+    - name: Türkçe
+      link: index.html
+      lang: tr
+    - name: English
+      link: home-en.html
+      lang: en
 
 extra_css:
+  - stylesheets/guide.css
   - stylesheets/downloads.css

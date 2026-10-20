@@ -4,7 +4,7 @@ lang: tr
 pdf: msc-endmilling-settings-tr.pdf
 ---
 
-# KERTME
+# Kertme Ayarları
 
 <div class="document-tools" markdown="1">
 [English](endmilling_settings_en.md) · **[PDF indir](downloads/msc-endmilling-settings-tr.pdf)**

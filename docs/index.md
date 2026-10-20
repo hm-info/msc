@@ -1,23 +1,41 @@
-# MSC_V2X Manual
+---
+title: Başlangıç
+lang: tr
+hide:
+  - toc
+---
 
-## NR241 / NR242 / NR210 — Job Files / İş Dosyaları
+# MSC Kullanım Rehberi
 
-Field definitions, bar and part sequence, cutting dimensions and the `nccode` machining field for NR-series machines using this file format.
+<p class="guide-intro">İş dosyaları, profil tanımları ve makine ayarları için ihtiyacınız olan rehberi seçin.</p>
 
-All guides include a **Download PDF / PDF indir** button. PDFs are updated automatically with the online content.
+<div class="guide-grid">
+  <a class="guide-card" href="nr_job_file_tr.html">
+    <span class="guide-card__label">İş dosyaları · NR serisi</span>
+    <h2>NR241 / NR242 / NR210</h2>
+    <p>Dosya alanları, çubuk ve parça sırası, kesim ölçüleri ve nccode işlem bilgisi.</p>
+    <span class="guide-card__action">Rehberi aç</span>
+  </a>
+  <a class="guide-card" href="profile_definitions_tr.html">
+    <span class="guide-card__label">Makine ayarları · Profil</span>
+    <h2>Profil tanımları</h2>
+    <p>Profil çalışma modu ve yükleme baskı modu seçenekleri.</p>
+    <span class="guide-card__action">Rehberi aç</span>
+  </a>
+  <a class="guide-card" href="macro_mapping_tr.html">
+    <span class="guide-card__label">Makine ayarları · Makro</span>
+    <h2>Makro eşleştirme</h2>
+    <p>İşlem kodlarını eşleştirme, yok sayma ve tersleme seçenekleri ile içe ve dışa aktarma.</p>
+    <span class="guide-card__action">Rehberi aç</span>
+  </a>
+  <a class="guide-card" href="endmilling_settings_tr.html">
+    <span class="guide-card__label">Makine ayarları · Kertme</span>
+    <h2>Kertme ayarları</h2>
+    <p>Kertme işlemi için PLC ve MSC ayarlarının açıklamaları.</p>
+    <span class="guide-card__action">Rehberi aç</span>
+  </a>
+</div>
 
-- [English](nr_job_file_en.md)
-- [Türkçe](nr_job_file_tr.md)
-- [Illustrative CSV / Temsili CSV](downloads/NR_Series_Job_Example.csv)
+<p class="guide-note">Her rehberin başındaki PDF indir düğmesiyle bir kopyasını cihazınıza kaydedebilirsiniz.</p>
 
-## Profile Definitions
-- [English](profile_definitions_en.md)
-- [Türkçe](profile_definitions_tr.md)
-
-## Macro Mapping Table
-- [English](macro_mapping_en.md)
-- [Türkçe](macro_mapping_tr.md)
-
-## End Milling Settings
-- [English](endmilling_settings_en.md)
-- [Türkçe](endmilling_settings_tr.md)
+<p class="guide-note">NR iş dosyanızı kontrol etmek için <a href="https://hm-info.github.io/csv_file_checker_haffner/">CSV File Checker</a> uygulamasını kullanabilirsiniz.</p>

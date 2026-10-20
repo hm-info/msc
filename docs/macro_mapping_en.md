@@ -4,7 +4,7 @@ lang: en
 pdf: msc-macro-mapping-en.pdf
 ---
 
-# MAPPING TABLE
+# Macro Mapping
 
 <div class="document-tools" markdown="1">
 [Türkçe](macro_mapping_tr.md) · **[Download PDF](downloads/msc-macro-mapping-en.pdf)**

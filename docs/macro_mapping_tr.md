@@ -4,7 +4,7 @@ lang: tr
 pdf: msc-macro-mapping-tr.pdf
 ---
 
-# EŞLEŞME TABLOSU (Mapping Table)
+# Makro Eşleştirme
 
 <div class="document-tools" markdown="1">
 [English](macro_mapping_en.md) · **[PDF indir](downloads/msc-macro-mapping-tr.pdf)**
