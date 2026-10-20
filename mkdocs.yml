@@ -19,10 +19,14 @@ theme:
 nav:
   - Ana Sayfa / Home: index.md
   - 🇹🇷 Türkçe:
+    - İş Dosyaları:
+      - NR241 / NR242 / NR210: nr_job_file_tr.md
     - End Milling Ayarları: endmilling_settings_tr.md
     - Makro Eşleştirme: macro_mapping_tr.md
     - Profil Tanımları: profile_definitions_tr.md
   - 🇬🇧 English:
+    - Job Files:
+      - NR241 / NR242 / NR210: nr_job_file_en.md
     - End Milling Settings: endmilling_settings_en.md
     - Macro Mapping: macro_mapping_en.md
     - Profile Definitions: profile_definitions_en.md
