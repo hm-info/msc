@@ -1,0 +1,1657 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Job files, profile definitions, macro mapping and end milling settings for MSC machines.">
+      
+      
+      
+        <link rel="canonical" href="https://hm-info.github.io/msc/macro_mapping_en.html">
+      
+      
+        <link rel="prev" href="profile_definitions_en.html">
+      
+      
+        <link rel="next" href="endmilling_settings_en.html">
+      
+      
+        
+          <link rel="alternate" href="macro_mapping_tr.html" hreflang="tr">
+        
+          <link rel="alternate" href="macro_mapping_en.html" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>MSC — Macro Mapping - MSC User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/guide.css">
+    
+      <link rel="stylesheet" href="stylesheets/downloads.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#macro-mapping" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="home-en.html" title="MSC User Guide" class="md-header__button md-logo" aria-label="MSC User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MSC User Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MSC — Macro Mapping
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <nav class="guide-language" aria-label="Language">
+  
+    <a href="macro_mapping_tr.html" lang="tr" hreflang="tr">Türkçe</a>
+  
+    <a href="macro_mapping_en.html" lang="en" hreflang="en" aria-current="page">English</a>
+  
+</nav>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="home-en.html" title="MSC User Guide" class="md-nav__button md-logo" aria-label="MSC User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MSC User Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="home-en.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job files
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Job files
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nr_job_file_en.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NR241 / NR242 / NR210
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Machine settings
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Machine settings
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="profile_definitions_en.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Profile definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macro mapping
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="macro_mapping_en.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macro mapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#msc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) INTRODUCTION
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-menu-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) MENU USAGE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2) MENU USAGE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-add-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1) ADD MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-update-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2) UPDATE MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-delete-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3) DELETE MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4) IMPORT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5) EXPORT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-profile-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6) PROFILE SELECTION
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-add-universal-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7) ADD UNIVERSAL MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-add-ignore-others-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8) ADD IGNORE OTHERS MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-add-reverse-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.9) ADD REVERSE MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#210-active-macro-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.10) ACTIVE MACRO DEFINITION
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211-reverse-macro-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.11) REVERSE MACRO DEFINITION
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) USAGE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3) USAGE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ignored-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1) IGNORED MACRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1) IGNORED MACRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-table-1-macro-with-universal-ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Table 1: Macro with Universal Ignore
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-single-macro-ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2) SINGLE MACRO IGNORE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2) SINGLE MACRO IGNORE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-table-2-single-macro-ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Table 2: Single Macro Ignore
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-add-reverse-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3) ADD REVERSE MACRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3) ADD REVERSE MACRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-table-3a-when-reverse-batch-file-option-is-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Table 3a: When "Reverse Batch File" Option is OFF
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-table-3b-when-reverse-batch-file-option-is-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Table 3b: When "Reverse Batch File" Option is ON
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-importexport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) IMPORT/EXPORT
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) IMPORT/EXPORT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Summary
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#document-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Document Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow-priorities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow Priorities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Directory
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="endmilling_settings_en.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    End milling settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#msc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) INTRODUCTION
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-menu-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) MENU USAGE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2) MENU USAGE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-add-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1) ADD MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-update-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2) UPDATE MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-delete-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3) DELETE MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4) IMPORT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5) EXPORT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-profile-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6) PROFILE SELECTION
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-add-universal-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7) ADD UNIVERSAL MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-add-ignore-others-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8) ADD IGNORE OTHERS MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-add-reverse-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.9) ADD REVERSE MACRO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#210-active-macro-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.10) ACTIVE MACRO DEFINITION
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211-reverse-macro-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.11) REVERSE MACRO DEFINITION
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) USAGE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3) USAGE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ignored-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1) IGNORED MACRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1) IGNORED MACRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-table-1-macro-with-universal-ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Table 1: Macro with Universal Ignore
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-single-macro-ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2) SINGLE MACRO IGNORE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2) SINGLE MACRO IGNORE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-table-2-single-macro-ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Table 2: Single Macro Ignore
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-add-reverse-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3) ADD REVERSE MACRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3) ADD REVERSE MACRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-table-3a-when-reverse-batch-file-option-is-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Table 3a: When "Reverse Batch File" Option is OFF
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-table-3b-when-reverse-batch-file-option-is-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Table 3b: When "Reverse Batch File" Option is ON
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-importexport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) IMPORT/EXPORT
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) IMPORT/EXPORT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Summary
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#document-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Document Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow-priorities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow Priorities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Directory
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="macro-mapping">Macro Mapping</h1>
+<div class="document-tools">
+<p><a href="macro_mapping_tr.html">Türkçe</a> · <strong><a href="downloads/msc-macro-mapping-en.pdf">Download PDF</a></strong></p>
+</div>
+<h2 id="msc">MSC</h2>
+<p><strong>Date:</strong> December 30, 2025<br />
+<strong>Company:</strong> HAFFNER MAKINE<br />
+<strong>Author:</strong> ERKAN BÜKER</p>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#1-introduction">INTRODUCTION</a></li>
+<li><a href="#2-menu-usage">MENU USAGE</a></li>
+<li>2.1) <a href="#21-add-macro">ADD MACRO</a></li>
+<li>2.2) <a href="#22-update-macro">UPDATE MACRO</a></li>
+<li>2.3) <a href="#23-delete-macro">DELETE MACRO</a></li>
+<li>2.4) <a href="#24-import">IMPORT</a></li>
+<li>2.5) <a href="#25-export">EXPORT</a></li>
+<li>2.6) <a href="#26-profile-selection">PROFILE SELECTION</a></li>
+<li>2.7) <a href="#27-add-universal-macro">ADD UNIVERSAL MACRO</a></li>
+<li>2.8) <a href="#28-add-ignore-others-macro">ADD IGNORE OTHERS MACRO</a></li>
+<li>2.9) <a href="#29-add-reverse-macro">ADD REVERSE MACRO</a></li>
+<li>2.10) <a href="#210-active-macro-definition">ACTIVE MACRO DEFINITION</a></li>
+<li>2.11) <a href="#211-reverse-macro-definition">REVERSE MACRO DEFINITION</a></li>
+<li><a href="#3-usage">USAGE</a></li>
+<li>3.1) <a href="#31-ignored-macro">IGNORED MACRO</a></li>
+<li>3.2) <a href="#32-single-macro-ignore">SINGLE MACRO IGNORE</a></li>
+<li>3.3) <a href="#33-add-reverse-macro">ADD REVERSE MACRO</a></li>
+<li><a href="#4-importexport">IMPORT/EXPORT</a></li>
+</ol>
+<hr />
+<h2 id="1-introduction">1) INTRODUCTION</h2>
+<p>Some adjustments are required to read common job files on different machines. A mapping table is needed to make these adjustments. The mapping table ensures that macros defined differently on different machines are converted correctly for the relevant machine. This makes it possible to operate different machines with a single job file. In addition, different types of macros are used in operations in different directions on the same type of machines. This also ensures that the correct operation is transferred by undergoing conversion through the mapping table.</p>
+<p><img alt="Mapping Table Introduction" src="_media/macro_mapping/1-giris-eslesme-tablosu.png" /></p>
+<hr />
+<h2 id="2-menu-usage">2) MENU USAGE</h2>
+<p>Descriptions of the objects in the menu are as follows.</p>
+<p><img alt="Menu Usage" src="_media/macro_mapping/2-menu-kullanimi.png" /></p>
+<h3 id="21-add-macro">2.1) ADD MACRO</h3>
+<p>Allows adding macro pairs to the table. Macro information is entered and the desired information is added to the table with the add command.</p>
+<h3 id="22-update-macro">2.2) UPDATE MACRO</h3>
+<p>Allows updating changes made to the selected macro in the table. A row must be selected from the table for updating. After selection, the relevant information is transferred to the objects in the menu, and if changes are made, the update command updates the relevant cells in the table with the information in the objects.</p>
+<h3 id="23-delete-macro">2.3) DELETE MACRO</h3>
+<p>Allows deletion of an object from the table. The desired row is selected and deletion is performed by running the command.</p>
+<h3 id="24-import">2.4) IMPORT</h3>
+<p>Allows adding new objects to the table via CSV (UTF-16 LE BOM, TAB-separated) file.</p>
+<h3 id="25-export">2.5) EXPORT</h3>
+<p>Allows exporting a TAB-separated file in UTF-16 LE BOM format with CSV extension of the objects in the table.</p>
+<h3 id="26-profile-selection">2.6) PROFILE SELECTION</h3>
+<p>If you want to add a profile-specific macro to the table, the relevant profile selection is made here.</p>
+<h3 id="27-add-universal-macro">2.7) ADD UNIVERSAL MACRO</h3>
+<p>This option is selected when adding a globally defined macro. When this option is selected, profile code selection is hidden. The profile code is added as "0". During matching, mappings are applied to all profiles regardless of profile code. Priority in matching is the profile code. In matches with a profile code, the priority is to perform the match belonging to the profile code. If there is no match for the profile code, global matching is checked.</p>
+<h3 id="28-add-ignore-others-macro">2.8) ADD IGNORE OTHERS MACRO</h3>
+<p>This option is designed to ignore macros outside the selections. Here, no macro definition is made except for macros with the relevant profile code or globally defined macros. If the ignore option exists, matches without ignore selection are not taken into account.</p>
+<h3 id="29-add-reverse-macro">2.9) ADD REVERSE MACRO</h3>
+<p>In this option, macro matches are only used in the reversed job file. These matches are not used during project loading. During reversal, the X position in all macros is changed according to part length.</p>
+<h3 id="210-active-macro-definition">2.10) ACTIVE MACRO DEFINITION</h3>
+<p>This is the field where the macro information to be converted is entered.</p>
+<h3 id="211-reverse-macro-definition">2.11) REVERSE MACRO DEFINITION</h3>
+<p>This is the field where information about which macro the macro to be converted will convert to is entered. If "0" is entered in this field, the relevant active macro is deleted during matching/loading.</p>
+<hr />
+<h2 id="3-usage">3) USAGE</h2>
+<h3 id="31-ignored-macro">3.1) IGNORED MACRO</h3>
+<p>Below are some examples according to the definitions in the table.</p>
+<p><img alt="Ignored Macro Example" src="_media/macro_mapping/3-1-yoksayilacak-makro.png" /></p>
+<h4 id="example-table-1-macro-with-universal-ignore">Example Table 1: Macro with Universal Ignore</h4>
+<table>
+<thead>
+<tr>
+<th>INPUT</th>
+<th>PROFILE</th>
+<th>RESULT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01020100000</td>
+<td>H01010600000</td>
+<td>test</td>
+</tr>
+<tr>
+<td>H01050100000</td>
+<td>H01030300000</td>
+<td>test</td>
+</tr>
+<tr>
+<td>H01010100000</td>
+<td>H01010600000</td>
+<td>test2</td>
+</tr>
+<tr>
+<td>H01020100000</td>
+<td>H01060100000</td>
+<td>test2</td>
+</tr>
+<tr>
+<td>H01020100000</td>
+<td>H01030600000</td>
+<td>test3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Explanation:</strong><br />
+Since the table contains macros with universal ignore, all input macros go through control and macros that do not match the table are ignored. Therefore, although there are matching macros in the table above, since ignore has priority, the system only matches macros with "ignore others" selected and deletes external ones. When there is profile-based ignoring, first the profile-internal "ignore others" feature macros are checked, then the universal ones are checked.</p>
+<hr />
+<h3 id="32-single-macro-ignore">3.2) SINGLE MACRO IGNORE</h3>
+<p>Below are some examples according to the definitions in the table.</p>
+<p><img alt="Single Macro Ignore" src="_media/macro_mapping/3-2-tek-makro-yoksayma.png" /></p>
+<h4 id="example-table-2-single-macro-ignore">Example Table 2: Single Macro Ignore</h4>
+<table>
+<thead>
+<tr>
+<th>INPUT</th>
+<th>PROFILE</th>
+<th>RESULT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01020100000H01010600000</td>
+<td>test</td>
+<td>H01060200000</td>
+</tr>
+<tr>
+<td>H01050100000H01030300000</td>
+<td>test</td>
+<td></td>
+</tr>
+<tr>
+<td>H01010100000H01010600000</td>
+<td>test2</td>
+<td></td>
+</tr>
+<tr>
+<td>H01020100000H01060100000</td>
+<td>test2</td>
+<td>H01060200000</td>
+</tr>
+<tr>
+<td>H01020100000H01030600000</td>
+<td>test3</td>
+<td>H01060200000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Explanation:</strong><br />
+Since there is no ignore in the table, no macro deletion occurs. To specifically ignore macros, the tool code in the reverse macro definition should be entered as "0". Since the only macro content that matches this definition is in the "test" profile macro definitions, the macro was deleted in only one match belonging to it.</p>
+<hr />
+<h3 id="33-add-reverse-macro">3.3) ADD REVERSE MACRO</h3>
+<p><img alt="Reverse Macro Settings" src="_media/macro_mapping/3-3-terslenecek-makro-ayarlari.png" /></p>
+<p>For active use of macros with this option selected, the "Reverse Batch File" option must be active in machine settings. When this option is in the off position, the relevant conversion is not used.</p>
+<p><img alt="Reverse Macro Example Table" src="_media/macro_mapping/3-3-terslenecek-makro.png" /></p>
+<h4 id="example-table-3a-when-reverse-batch-file-option-is-off">Example Table 3a: When "Reverse Batch File" Option is OFF</h4>
+<table>
+<thead>
+<tr>
+<th>INPUT</th>
+<th>PROFILE</th>
+<th>RESULT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01020100000H01010600000</td>
+<td>test</td>
+<td>H01060200000H01010600000</td>
+</tr>
+<tr>
+<td>H01050100000H01030300000</td>
+<td>test</td>
+<td>H01050100000H01030300000</td>
+</tr>
+<tr>
+<td>H01060100000H01010600000</td>
+<td>test2</td>
+<td>H01060100000H01010600000</td>
+</tr>
+<tr>
+<td>H01020100000H01060100000</td>
+<td>test2</td>
+<td>H01010200000H01030300000</td>
+</tr>
+<tr>
+<td>H01020100000H01030600000</td>
+<td>test3</td>
+<td>H01060200000H01030600000</td>
+</tr>
+</tbody>
+</table>
+<h4 id="example-table-3b-when-reverse-batch-file-option-is-on">Example Table 3b: When "Reverse Batch File" Option is ON</h4>
+<table>
+<thead>
+<tr>
+<th>INPUT</th>
+<th>PROFILE</th>
+<th>RESULT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01020100000H01060100000</td>
+<td>test</td>
+<td>H01060205000H01030205000</td>
+</tr>
+<tr>
+<td>H01050100000H01030300000</td>
+<td>test</td>
+<td>H01030305000</td>
+</tr>
+<tr>
+<td>H01060100000H01010600000</td>
+<td>test2</td>
+<td>H01060105000H01010605000</td>
+</tr>
+<tr>
+<td>H01020100000H01060100000</td>
+<td>test2</td>
+<td>H01010205000H01030305000</td>
+</tr>
+<tr>
+<td>H01020100000H01030600000</td>
+<td>test3</td>
+<td>H01060205000H01030605000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Explanation:</strong><br />
+If the option is active in machine settings, matches in the table undergo changes, then the mapping table is activated for reversal. At the same time, the x position is reversed according to part length. In the example tables, part length is taken as 500 units.</p>
+<hr />
+<h2 id="4-importexport">4) IMPORT/EXPORT</h2>
+<p>If you want to fill the table using Excel or any text editor, you can easily obtain a sample format with the export button.</p>
+<p><img alt="Import/Export Screen" src="_media/macro_mapping/4-ice-disa-aktarim.png" /></p>
+<h3 id="file-format">File Format</h3>
+<p><strong>Import/Export Format:</strong> CSV (UTF-16 LE BOM, TAB-separated)</p>
+<hr />
+<h2 id="technical-summary">Technical Summary</h2>
+<h3 id="document-purpose">Document Purpose</h3>
+<p>This guide describes the Mapping Table system for Haffner Makine's MSC machines. The system provides:</p>
+<ul>
+<li>Conversion of macro definitions between different machines</li>
+<li>Use of a single job file on multiple machines</li>
+<li>Processing of different macro types for operations in different directions</li>
+<li>Profile-based and universal macro management</li>
+<li>Import/export functionality for batch operations</li>
+</ul>
+<h3 id="key-features">Key Features</h3>
+<ol>
+<li><strong>Profile-Based Mapping:</strong> Allows machine-specific macro conversions</li>
+<li><strong>Universal Macros:</strong> Global definitions applicable to all profiles</li>
+<li><strong>Ignore Function:</strong> Selective macro processing with ignore rules</li>
+<li><strong>Reverse Macros:</strong> Special processing for reversed job files with X-position transformation</li>
+<li><strong>Import/Export:</strong> CSV UTF-16 LE BOM format support</li>
+</ol>
+<h3 id="workflow-priorities">Workflow Priorities</h3>
+<ol>
+<li>Profile-specific mappings take priority</li>
+<li>If no profile match exists, universal (global) mappings are checked</li>
+<li>Ignore rules have the highest priority when active</li>
+<li>Reverse batch file option must be enabled for reverse macro functionality</li>
+</ol>
+<hr />
+<h2 id="image-directory">Image Directory</h2>
+<p>All images used in this document are located in the <code>_media/macro_mapping/</code> folder:</p>
+<ul>
+<li><code>1-giris-eslesme-tablosu.png</code> - Introduction screen</li>
+<li><code>2-menu-kullanimi.png</code> - Menu usage interface</li>
+<li><code>3-1-yoksayilacak-makro.png</code> - Ignored macro example</li>
+<li><code>3-2-tek-makro-yoksayma.png</code> - Single macro ignore table</li>
+<li><code>3-3-terslenecek-makro-ayarlari.png</code> - Reverse macro settings screen</li>
+<li><code>3-3-terslenecek-makro.png</code> - Reverse macro example table</li>
+<li><code>4-ice-disa-aktarim.png</code> - Import/Export screen</li>
+</ul>
+<p>Total <strong>7 images</strong> used (19 images extracted from PDF, relevant ones selected).</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.expand", "navigation.top", "search.highlight"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1657 @@
+
+<!doctype html>
+<html lang="tr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="MSC arayüzü kullanan makineler için iş dosyaları, profil, makro eşleştirme ve kertme ayarları">
+      
+      
+      
+        <link rel="canonical" href="https://hm-info.github.io/msc/macro_mapping_tr.html">
+      
+      
+        <link rel="prev" href="profile_definitions_tr.html">
+      
+      
+        <link rel="next" href="endmilling_settings_tr.html">
+      
+      
+        
+          <link rel="alternate" href="macro_mapping_tr.html" hreflang="tr">
+        
+          <link rel="alternate" href="macro_mapping_en.html" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>MSC — Makro Eşleştirme - MSC Kullanım Rehberi</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/guide.css">
+    
+      <link rel="stylesheet" href="stylesheets/downloads.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#makro-eslestirme" class="md-skip">
+          Ana içeriğe geç
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Başlık">
+    <a href="index.html" title="MSC Kullanım Rehberi" class="md-header__button md-logo" aria-label="MSC Kullanım Rehberi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MSC Kullanım Rehberi
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MSC — Makro Eşleştirme
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <nav class="guide-language" aria-label="Dil seçimi">
+  
+    <a href="macro_mapping_tr.html" lang="tr" hreflang="tr" aria-current="page">Türkçe</a>
+  
+    <a href="macro_mapping_en.html" lang="en" hreflang="en">English</a>
+  
+</nav>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Ara" placeholder="Ara" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Ara">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Temizle" aria-label="Temizle" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Arama başlatılıyor
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasyon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="MSC Kullanım Rehberi" class="md-nav__button md-logo" aria-label="MSC Kullanım Rehberi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MSC Kullanım Rehberi
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Başlangıç
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    İş dosyaları
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    İş dosyaları
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nr_job_file_tr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NR241 / NR242 / NR210
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Makine ayarları
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Makine ayarları
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="profile_definitions_tr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Profil tanımları
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Makro eşleştirme
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="macro_mapping_tr.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Makro eşleştirme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#msc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icindekiler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İçindekiler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-giris" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) GİRİŞ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-menu-kullanimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) MENU KULLANIMI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2) MENU KULLANIMI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-makro-ekle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1) MAKRO EKLE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-makro-guncelleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2) MAKRO GÜNCELLEME
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-makroyu-sil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3) MAKROYU SİL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-ice-aktar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4) İÇE AKTAR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-disa-aktar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5) DIŞA AKTAR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-profil-secimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6) PROFİL SEÇİMİ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-evrensel-makro-ekleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7) EVRENSEL MAKRO EKLEME
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-digerlerini-yok-say-makrosu-ekleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8) DİĞERLERİNİ YOK SAY MAKROSU EKLEME
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-terslenecek-makro-ekleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.9) TERSLENECEK MAKRO EKLEME
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#210-aktif-makro-tanimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.10) AKTIF MAKRO TANIMI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211-terslenecek-makro-tanimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.11) TERSLENECEK MAKRO TANIMI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-kullanim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) KULLANIM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3) KULLANIM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-yoksayilacak-makro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1) YOKSAYILACAK MAKRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1) YOKSAYILACAK MAKRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ornek-tablo-1-evrensel-yok-sayma-ile-makro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek Tablo 1: Evrensel Yok Sayma ile Makro
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-tek-makro-yoksayma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2) TEK MAKRO YOKSAYMA
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2) TEK MAKRO YOKSAYMA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ornek-tablo-2-tek-makro-yok-sayma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek Tablo 2: Tek Makro Yok Sayma
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-terslenecek-makro-ekleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3) TERSLENECEK MAKRO EKLEME
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3) TERSLENECEK MAKRO EKLEME">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ornek-tablo-3a-reverse-batch-file-opsiyonu-kapali-iken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek Tablo 3a: "Reverse Batch File" Opsiyonu KAPALI İken
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ornek-tablo-3b-reverse-batch-file-opsiyonu-acik-iken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek Tablo 3b: "Reverse Batch File" Opsiyonu AÇIK İken
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-icedisa-aktarim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) İÇE/DIŞA AKTARIM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) İÇE/DIŞA AKTARIM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dosya-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dosya Formatı
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teknik-ozet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teknik Özet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Teknik Özet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dokuman-amac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Doküman Amacı
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ana-ozellikler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ana Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-aks-oncelikleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İş Akışı Öncelikleri
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gorsel-dizini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Görsel Dizini
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="endmilling_settings_tr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kertme ayarları
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#msc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icindekiler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İçindekiler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-giris" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) GİRİŞ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-menu-kullanimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) MENU KULLANIMI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2) MENU KULLANIMI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-makro-ekle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1) MAKRO EKLE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-makro-guncelleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2) MAKRO GÜNCELLEME
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-makroyu-sil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3) MAKROYU SİL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-ice-aktar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4) İÇE AKTAR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-disa-aktar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5) DIŞA AKTAR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-profil-secimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6) PROFİL SEÇİMİ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-evrensel-makro-ekleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7) EVRENSEL MAKRO EKLEME
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-digerlerini-yok-say-makrosu-ekleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8) DİĞERLERİNİ YOK SAY MAKROSU EKLEME
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-terslenecek-makro-ekleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.9) TERSLENECEK MAKRO EKLEME
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#210-aktif-makro-tanimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.10) AKTIF MAKRO TANIMI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211-terslenecek-makro-tanimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.11) TERSLENECEK MAKRO TANIMI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-kullanim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) KULLANIM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3) KULLANIM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-yoksayilacak-makro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1) YOKSAYILACAK MAKRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1) YOKSAYILACAK MAKRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ornek-tablo-1-evrensel-yok-sayma-ile-makro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek Tablo 1: Evrensel Yok Sayma ile Makro
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-tek-makro-yoksayma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2) TEK MAKRO YOKSAYMA
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2) TEK MAKRO YOKSAYMA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ornek-tablo-2-tek-makro-yok-sayma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek Tablo 2: Tek Makro Yok Sayma
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-terslenecek-makro-ekleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3) TERSLENECEK MAKRO EKLEME
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3) TERSLENECEK MAKRO EKLEME">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ornek-tablo-3a-reverse-batch-file-opsiyonu-kapali-iken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek Tablo 3a: "Reverse Batch File" Opsiyonu KAPALI İken
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ornek-tablo-3b-reverse-batch-file-opsiyonu-acik-iken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek Tablo 3b: "Reverse Batch File" Opsiyonu AÇIK İken
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-icedisa-aktarim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) İÇE/DIŞA AKTARIM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) İÇE/DIŞA AKTARIM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dosya-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dosya Formatı
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teknik-ozet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teknik Özet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Teknik Özet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dokuman-amac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Doküman Amacı
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ana-ozellikler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ana Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-aks-oncelikleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İş Akışı Öncelikleri
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gorsel-dizini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Görsel Dizini
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="makro-eslestirme">Makro Eşleştirme</h1>
+<div class="document-tools">
+<p><a href="macro_mapping_en.html">English</a> · <strong><a href="downloads/msc-macro-mapping-tr.pdf">PDF indir</a></strong></p>
+</div>
+<h2 id="msc">MSC</h2>
+<p><strong>Tarih:</strong> 30 Aralık 2025<br />
+<strong>Şirket:</strong> HAFFNER MAKİNE<br />
+<strong>Yazar:</strong> ERKAN BÜKER</p>
+<hr />
+<h2 id="icindekiler">İçindekiler</h2>
+<ol>
+<li><a href="#1-giris">GİRİŞ</a></li>
+<li><a href="#2-menu-kullanimi">MENU KULLANIMI</a></li>
+<li>2.1) <a href="#21-makro-ekle">MAKRO EKLE</a></li>
+<li>2.2) <a href="#22-makro-guncelleme">MAKRO GÜNCELLEME</a></li>
+<li>2.3) <a href="#23-makroyu-sil">MAKROYU SİL</a></li>
+<li>2.4) <a href="#24-ice-aktar">İÇE AKTAR</a></li>
+<li>2.5) <a href="#25-disa-aktar">DIŞA AKTAR</a></li>
+<li>2.6) <a href="#26-profil-secimi">PROFİL SEÇİMİ</a></li>
+<li>2.7) <a href="#27-evrensel-makro-ekleme">EVRENSEL MAKRO EKLEME</a></li>
+<li>2.8) <a href="#28-digerlerini-yok-say-makrosu-ekleme">DİĞERLERİNİ YOK SAY MAKROSU EKLEME</a></li>
+<li>2.9) <a href="#29-terslenecek-makro-ekleme">TERSLENECEK MAKRO EKLEME</a></li>
+<li>2.10) <a href="#210-aktif-makro-tanimi">AKTIF MAKRO TANIMI</a></li>
+<li>2.11) <a href="#211-terslenecek-makro-tanimi">TERSLENECEK MAKRO TANIMI</a></li>
+<li><a href="#3-kullanim">KULLANIM</a></li>
+<li>3.1) <a href="#31-yoksayilacak-makro">YOKSAYILACAK MAKRO</a></li>
+<li>3.2) <a href="#32-tek-makro-yoksayma">TEK MAKRO YOKSAYMA</a></li>
+<li>3.3) <a href="#33-terslenecek-makro-ekleme">TERSLENECEK MAKRO EKLEME</a></li>
+<li><a href="#4-icedisa-aktarim">İÇE/DIŞA AKTARIM</a></li>
+</ol>
+<hr />
+<h2 id="1-giris">1) GİRİŞ</h2>
+<p>Birbirinden farklı makinelerde ortak iş dosyalarının okunması için bazı düzenlemeler gerekmektedir. Bu düzenlemelerin yapılması için eşleşme tablosuna ihtiyaç vardır. Eşleşme tablosu sayesinde birbirinden farklı makinelerde farklı tanımlanan makroların ilgili makine için doğru şekilde dönüştürülmesini sağlamaktadır. Bu sayede tek bir iş dosyası ile birbirinden farklı makinelerin çalıştırılması mümkün olmaktadır. Ek olarak aynı tip makinelerde farklı yönlü operasyonlarda farklı tip makrolar kullanılmaktadır. Bu da eşleşme tablosu sayesinde dönüşüme uğrayarak doğru doğrultudaki işlemi aktarmasını sağlamaktadır.</p>
+<p><img alt="Eşleşme Tablosu Giriş" src="_media/macro_mapping/1-giris-eslesme-tablosu.png" /></p>
+<hr />
+<h2 id="2-menu-kullanimi">2) MENU KULLANIMI</h2>
+<p>Menüde bulunan nesnelerin açıklamaları aşağıdaki gibidir.</p>
+<p><img alt="Menü Kullanımı" src="_media/macro_mapping/2-menu-kullanimi.png" /></p>
+<h3 id="21-makro-ekle">2.1) MAKRO EKLE</h3>
+<p>Makro eşlerinin tabloya eklenmesini sağlar. Makro bilgileri girilir ve ekle komutu ile istenen bilgiler tabloya eklenmesi sağlanır.</p>
+<h3 id="22-makro-guncelleme">2.2) MAKRO GÜNCELLEME</h3>
+<p>Tabloda seçilen makronun üzerinde yapılan değişikliğinin güncellenmesini sağlar. Güncelleme için tablodan bir satır seçilmelidir. Seçim yapıldıktan sonra ilgili bilgiler menüdeki nesnelere aktarılır ve üzerinde değişiklik yapılırsa güncelleme komutu ile nesnelerdeki bilgiler tablodaki ilgili hücreleri günceller.</p>
+<h3 id="23-makroyu-sil">2.3) MAKROYU SİL</h3>
+<p>Tablodaki bir nesnenin silinmesini sağlar. İstenen satır seçilir ve komut çalıştırılarak silme gerçekleşir.</p>
+<h3 id="24-ice-aktar">2.4) İÇE AKTAR</h3>
+<p>CSV (UTF-16 LE BOM, TAB ile ayrılmış.) dosyası ile tabloya yeni nesneler eklenmesi sağlanır.</p>
+<h3 id="25-disa-aktar">2.5) DIŞA AKTAR</h3>
+<p>Tablodaki nesnelerin CSV uzantılı UTF-16 LE BOM formatında TAB ile ayrılmış bir dosyanın dışarı aktarılmasını sağlar.</p>
+<h3 id="26-profil-secimi">2.6) PROFİL SEÇİMİ</h3>
+<p>Tabloya profile özgü bir makro eklemek istenirse ilgili profil seçimi buradan yapılır.</p>
+<h3 id="27-evrensel-makro-ekleme">2.7) EVRENSEL MAKRO EKLEME</h3>
+<p>Global tanımlı bir makro eklenmek istenirse bu opsiyon seçilir. Bu opsiyon seçilirse profil kodu seçimi gizlenir. Profil kodu "0" olarak eklenir. Eşleşme sırasında profil kodu fark etmeksizin tüm profillere eşleşmeler uygulanır. Eşleşmede öncelik profil kodudur. Profil kodu olan eşleşmelerde öncelik profil koduna ait olan eşleşmeyi yapmaktır. Profil koduna ait olan eşleşme yoksa global eşleşme kontrol edilir.</p>
+<h3 id="28-digerlerini-yok-say-makrosu-ekleme">2.8) DİĞERLERİNİ YOK SAY MAKROSU EKLEME</h3>
+<p>Bu seçenek makroların seçimler dışında olanlarını yok saymayı sağlamak için tasarlanmıştır. Burada ilgili profil koduna sahip veya global tanımlı makrolar dışında herhangi bir makro tanımı yapılmaz. Yok say seçeneği varsa yok say seçimi olmayan eşleşmeler dikkate alınmaz.</p>
+<h3 id="29-terslenecek-makro-ekleme">2.9) TERSLENECEK MAKRO EKLEME</h3>
+<p>Bu seçenekte makro eşleşmeleri sadece terslenen iş dosyasında kullanılmaktadır. Proje yüklenmesi sırasında bu eşleşmeler kullanılmamaktadır. Tersleme sırasında tüm makrolarda X konumu parça boyuna göre değiştirilir.</p>
+<h3 id="210-aktif-makro-tanimi">2.10) AKTIF MAKRO TANIMI</h3>
+<p>İlgili alanda dönüşüm yapılacak olan makro bilgilerinin girildiği bir alandır.</p>
+<h3 id="211-terslenecek-makro-tanimi">2.11) TERSLENECEK MAKRO TANIMI</h3>
+<p>İlgili alanda dönüşüm yapılacak makronun hangi makroya dönüşüm yapacağının bilgilerinin girildiği alandır. Bu alandaki bilgiler "0" girilirse eşleşme sırasında ilgili aktif makro yükleme sırasında silinir.</p>
+<hr />
+<h2 id="3-kullanim">3) KULLANIM</h2>
+<h3 id="31-yoksayilacak-makro">3.1) YOKSAYILACAK MAKRO</h3>
+<p>Tablodaki tanımlara göre aşağıda bazı örneklemeler mevcuttur.</p>
+<p><img alt="Yoksayılacak Makro Örneği" src="_media/macro_mapping/3-1-yoksayilacak-makro.png" /></p>
+<h4 id="ornek-tablo-1-evrensel-yok-sayma-ile-makro">Örnek Tablo 1: Evrensel Yok Sayma ile Makro</h4>
+<table>
+<thead>
+<tr>
+<th>GİRİŞ (Input)</th>
+<th>PROFİL (Profile)</th>
+<th>SONUÇ (Result)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01020100000</td>
+<td>H01010600000</td>
+<td>test</td>
+</tr>
+<tr>
+<td>H01050100000</td>
+<td>H01030300000</td>
+<td>test</td>
+</tr>
+<tr>
+<td>H01010100000</td>
+<td>H01010600000</td>
+<td>test2</td>
+</tr>
+<tr>
+<td>H01020100000</td>
+<td>H01060100000</td>
+<td>test2</td>
+</tr>
+<tr>
+<td>H01020100000</td>
+<td>H01030600000</td>
+<td>test3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Açıklama:</strong><br />
+Tabloda evrensel yok sayma içeren makrolar olduğu için girişteki tüm makrolar kontrolden geçip tabloya uymayan makrolar yok sayılır. Bu nedenle yukarıdaki tabloda eşleşen makrolar olmasına rağmen yok sayma öncelikli olduğu için sistem sadece diğerlerini yok say seçili olan makroları eşliyor. Harici olanları siliyor. Profil bazlı yok sayma olduğu zaman ilk önce profil içi diğerlerini yok say özellikli makrolar kontrol edilir. Ardından evrensel olanlar kontrol edilir.</p>
+<hr />
+<h3 id="32-tek-makro-yoksayma">3.2) TEK MAKRO YOKSAYMA</h3>
+<p>Tablodaki tanımlara göre aşağıda bazı örneklemeler mevcuttur.</p>
+<p><img alt="Tek Makro Yoksayma" src="_media/macro_mapping/3-2-tek-makro-yoksayma.png" /></p>
+<h4 id="ornek-tablo-2-tek-makro-yok-sayma">Örnek Tablo 2: Tek Makro Yok Sayma</h4>
+<table>
+<thead>
+<tr>
+<th>GİRİŞ (Input)</th>
+<th>PROFİL (Profile)</th>
+<th>SONUÇ (Result)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01020100000H01010600000</td>
+<td>test</td>
+<td>H01060200000</td>
+</tr>
+<tr>
+<td>H01050100000H01030300000</td>
+<td>test</td>
+<td></td>
+</tr>
+<tr>
+<td>H01010100000H01010600000</td>
+<td>test2</td>
+<td></td>
+</tr>
+<tr>
+<td>H01020100000H01060100000</td>
+<td>test2</td>
+<td>H01060200000</td>
+</tr>
+<tr>
+<td>H01020100000H01030600000</td>
+<td>test3</td>
+<td>H01060200000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Açıklama:</strong><br />
+Tabloda yok sayma olmadığı için herhangi bir makro silme olmaz. Makroların özel olarak yok sayılması için terslenen makro tanımında takım kodunun "0" girilmesidir. Bu tanıma uyan tek makro içeriği "test" profiline ait makro tanımlarında olduğu için sadece ona ait bir eşleşmede makro silinmiştir.</p>
+<hr />
+<h3 id="33-terslenecek-makro-ekleme">3.3) TERSLENECEK MAKRO EKLEME</h3>
+<p><img alt="Terslenecek Makro Ayarları" src="_media/macro_mapping/3-3-terslenecek-makro-ayarlari.png" /></p>
+<p>Bu opsiyon seçili olan makroların aktif olarak kullanımı için makine ayarlarından "Reverse Batch File" opsiyonunun aktif olması gerekmektedir. Bu opsiyon kapalı konumda olduğu zaman ilgili dönüşüm kullanılmaz.</p>
+<p><img alt="Terslenecek Makro Örnek Tablo" src="_media/macro_mapping/3-3-terslenecek-makro.png" /></p>
+<h4 id="ornek-tablo-3a-reverse-batch-file-opsiyonu-kapali-iken">Örnek Tablo 3a: "Reverse Batch File" Opsiyonu KAPALI İken</h4>
+<table>
+<thead>
+<tr>
+<th>GİRİŞ (Input)</th>
+<th>PROFİL (Profile)</th>
+<th>SONUÇ (Result)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01020100000H01010600000</td>
+<td>test</td>
+<td>H01060200000H01010600000</td>
+</tr>
+<tr>
+<td>H01050100000H01030300000</td>
+<td>test</td>
+<td>H01050100000H01030300000</td>
+</tr>
+<tr>
+<td>H01060100000H01010600000</td>
+<td>test2</td>
+<td>H01060100000H01010600000</td>
+</tr>
+<tr>
+<td>H01020100000H01060100000</td>
+<td>test2</td>
+<td>H01010200000H01030300000</td>
+</tr>
+<tr>
+<td>H01020100000H01030600000</td>
+<td>test3</td>
+<td>H01060200000H01030600000</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ornek-tablo-3b-reverse-batch-file-opsiyonu-acik-iken">Örnek Tablo 3b: "Reverse Batch File" Opsiyonu AÇIK İken</h4>
+<table>
+<thead>
+<tr>
+<th>GİRİŞ (Input)</th>
+<th>PROFİL (Profile)</th>
+<th>SONUÇ (Result)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01020100000H01060100000</td>
+<td>test</td>
+<td>H01060205000H01030205000</td>
+</tr>
+<tr>
+<td>H01050100000H01030300000</td>
+<td>test</td>
+<td>H01030305000</td>
+</tr>
+<tr>
+<td>H01060100000H01010600000</td>
+<td>test2</td>
+<td>H01060105000H01010605000</td>
+</tr>
+<tr>
+<td>H01020100000H01060100000</td>
+<td>test2</td>
+<td>H01010205000H01030305000</td>
+</tr>
+<tr>
+<td>H01020100000H01030600000</td>
+<td>test3</td>
+<td>H01060205000H01030605000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Açıklama:</strong><br />
+Makine ayarlarında opsiyon açık ise tabloda eşleşenler değişime uğrar ardından eşleşme tablosu terslemek için devreye girer. Aynı sırada x pozisyonu parça boyuna göre terslenir. Örnek tablolarda parça boyu 500 birim olarak alınmıştır.</p>
+<hr />
+<h2 id="4-icedisa-aktarim">4) İÇE/DIŞA AKTARIM</h2>
+<p>Tabloyu excel ortamında veya herhangi bir yazı editörü kullanarak doldurmak isterseniz kolaylıkla dışa aktar butonu ile örnek bir format elde edebilirsiniz.</p>
+<p><img alt="İçe/Dışa Aktarım Ekranı" src="_media/macro_mapping/4-ice-disa-aktarim.png" /></p>
+<h3 id="dosya-format">Dosya Formatı</h3>
+<p><strong>İçe/Dışa Aktarma Formatı:</strong> CSV (UTF-16 LE BOM, TAB ile ayrılmış)</p>
+<hr />
+<h2 id="teknik-ozet">Teknik Özet</h2>
+<h3 id="dokuman-amac">Doküman Amacı</h3>
+<p>Bu kılavuz, Haffner Makine'nin MSC makineleri için Eşleşme Tablosu (Mapping Table) sistemini açıklamaktadır. Sistem şunları sağlar:</p>
+<ul>
+<li>Farklı makineler arasında makro tanımlarının dönüştürülmesi</li>
+<li>Tek bir iş dosyasının birden fazla makinede kullanılması</li>
+<li>Farklı yönlü operasyonlar için farklı makro tiplerinin işlenmesi</li>
+<li>Profile dayalı ve evrensel makro yönetimi</li>
+<li>Toplu işlemler için içe/dışa aktarma fonksiyonelliği</li>
+</ul>
+<h3 id="ana-ozellikler">Ana Özellikler</h3>
+<ol>
+<li><strong>Profile Dayalı Eşleştirme:</strong> Makineye özgü makro dönüşümlerine izin verir</li>
+<li><strong>Evrensel Makrolar:</strong> Tüm profillerde geçerli olan global tanımlar</li>
+<li><strong>Yok Sayma Fonksiyonu:</strong> Yok sayma kuralları ile seçici makro işleme</li>
+<li><strong>Ters Makrolar:</strong> X-pozisyon dönüşümü ile terslenmiş iş dosyaları için özel işlem</li>
+<li><strong>İçe/Dışa Aktarma:</strong> CSV UTF-16 LE BOM format desteği</li>
+</ol>
+<h3 id="is-aks-oncelikleri">İş Akışı Öncelikleri</h3>
+<ol>
+<li>Profile özgü eşleştirmeler öncelik kazanır</li>
+<li>Profil eşleştirmesi yoksa evrensel (global) eşleştirmeler kontrol edilir</li>
+<li>Yok sayma kuralları aktif olduğunda en yüksek önceliğe sahiptir</li>
+<li>Ters makro fonksiyonelliği için reverse batch file opsiyonu etkin olmalıdır</li>
+</ol>
+<hr />
+<h2 id="gorsel-dizini">Görsel Dizini</h2>
+<p>Bu dokümanda kullanılan tüm görseller <code>_media/macro_mapping/</code> klasöründe bulunmaktadır:</p>
+<ul>
+<li><code>1-giris-eslesme-tablosu.png</code> - Giriş bölümü ekran görüntüsü</li>
+<li><code>2-menu-kullanimi.png</code> - Menü kullanımı arayüzü</li>
+<li><code>3-1-yoksayilacak-makro.png</code> - Yoksayılacak makro örneği</li>
+<li><code>3-2-tek-makro-yoksayma.png</code> - Tek makro yoksayma tablosu</li>
+<li><code>3-3-terslenecek-makro-ayarlari.png</code> - Terslenecek makro ayarları ekranı</li>
+<li><code>3-3-terslenecek-makro.png</code> - Terslenecek makro örnek tablosu</li>
+<li><code>4-ice-disa-aktarim.png</code> - İçe/Dışa aktarım ekranı</li>
+</ul>
+<p>Toplam <strong>7 görsel</strong> kullanılmıştır (19 görsel PDF'den çıkarılmış, ilgili olanlar seçilmiştir).</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Başa dön
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.expand", "navigation.top", "search.highlight"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Kopyaland\u0131", "clipboard.copy": "Kopyala", "search.result.more.one": "Bu sayfada 1 tane daha", "search.result.more.other": "Bu sayfada # tane daha", "search.result.none": "E\u015fle\u015fen dok\u00fcman bulunamad\u0131", "search.result.one": "1 dok\u00fcman bulundu", "search.result.other": "# dok\u00fcman bulundu", "search.result.placeholder": "Aramaya ba\u015flamak i\u00e7in yaz\u0131n", "search.result.term.missing": "Eksik", "select.version": "Versiyon se\u00e7"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
