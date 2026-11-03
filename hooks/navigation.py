@@ -8,6 +8,7 @@ from mkdocs.structure.nav import Navigation, Section
 PAIRS = (
     ("index.md", "home-en.md"),
     ("nr_job_file_tr.md", "nr_job_file_en.md"),
+    ("sc220_job_file_tr.md", "sc220_job_file_en.md"),
     ("profile_definitions_tr.md", "profile_definitions_en.md"),
     ("macro_mapping_tr.md", "macro_mapping_en.md"),
     ("endmilling_settings_tr.md", "endmilling_settings_en.md"),
@@ -20,10 +21,10 @@ def on_page_context(context, page, config, nav, **kwargs):
     english = source == pair[1]
     language = "en" if english else "tr"
     labels = (
-        ("Getting started", "NR241 / NR242 / NR210", "Profile definitions",
+        ("Getting started", "NR241 / NR242 / NR210", "SC220-40 / SC220-80", "Profile definitions",
          "Macro mapping", "End milling settings")
         if english else
-        ("Başlangıç", "NR241 / NR242 / NR210", "Profil tanımları",
+        ("Başlangıç", "NR241 / NR242 / NR210", "SC220-40 / SC220-80", "Profil tanımları",
          "Makro eşleştirme", "Kertme ayarları")
     )
     sources = [item[1 if english else 0] for item in PAIRS]
@@ -37,8 +38,8 @@ def on_page_context(context, page, config, nav, **kwargs):
         pages.append(item)
 
     sections = [
-        Section("Job files" if english else "İş dosyaları", [pages[1]]),
-        Section("Machine settings" if english else "Makine ayarları", pages[2:]),
+        Section("Job files" if english else "İş dosyaları", pages[1:3]),
+        Section("Machine settings" if english else "Makine ayarları", pages[3:]),
     ]
     for section in sections:
         section.active = any(item.active for item in section.children)

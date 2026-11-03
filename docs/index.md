@@ -16,6 +16,12 @@ hide:
     <p>Dosya alanları, çubuk ve parça sırası, kesim ölçüleri ve nccode işlem bilgisi.</p>
     <span class="guide-card__action">Rehberi aç</span>
   </a>
+  <a class="guide-card" href="sc220_job_file_tr.html">
+    <span class="guide-card__label">İş dosyaları · SC220</span>
+    <h2>SC220-40 / SC220-80</h2>
+    <p>NR241 ile aynı dosya düzeni; 12 karakterlik nccode işlem bloğu ve NR biçiminden farkı.</p>
+    <span class="guide-card__action">Rehberi aç</span>
+  </a>
   <a class="guide-card" href="profile_definitions_tr.html">
     <span class="guide-card__label">Makine ayarları · Profil</span>
     <h2>Profil tanımları</h2>

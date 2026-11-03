@@ -22,6 +22,7 @@ nav:
       - Başlangıç: index.md
       - İş Dosyaları:
           - NR241 / NR242 / NR210: nr_job_file_tr.md
+          - SC220-40 / SC220-80: sc220_job_file_tr.md
       - Makine Ayarları:
           - Profil Tanımları: profile_definitions_tr.md
           - Makro Eşleştirme: macro_mapping_tr.md
@@ -30,6 +31,7 @@ nav:
       - Getting Started: home-en.md
       - Job Files:
           - NR241 / NR242 / NR210: nr_job_file_en.md
+          - SC220-40 / SC220-80: sc220_job_file_en.md
       - Machine Settings:
           - Profile Definitions: profile_definitions_en.md
           - Macro Mapping: macro_mapping_en.md

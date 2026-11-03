@@ -16,6 +16,12 @@ hide:
     <p>File fields, bar and part sequence, cutting dimensions and nccode machining information.</p>
     <span class="guide-card__action">Open guide</span>
   </a>
+  <a class="guide-card" href="sc220_job_file_en.html">
+    <span class="guide-card__label">Job files · SC220</span>
+    <h2>SC220-40 / SC220-80</h2>
+    <p>Same file layout as NR241; the 12-character nccode operation block and how it differs from the NR format.</p>
+    <span class="guide-card__action">Open guide</span>
+  </a>
   <a class="guide-card" href="profile_definitions_en.html">
     <span class="guide-card__label">Machine settings · Profile</span>
     <h2>Profile definitions</h2>
