@@ -1,0 +1,965 @@
+
+<!doctype html>
+<html lang="tr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="MSC arayüzü kullanan makineler için iş dosyaları, profil, makro eşleştirme ve kertme ayarları">
+      
+      
+      
+        <link rel="canonical" href="https://hm-info.github.io/msc/sc220_job_file_tr.html">
+      
+      
+        <link rel="prev" href="nr_job_file_tr.html">
+      
+      
+        <link rel="next" href="profile_definitions_tr.html">
+      
+      
+        
+          <link rel="alternate" href="sc220_job_file_tr.html" hreflang="tr">
+        
+          <link rel="alternate" href="sc220_job_file_en.html" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>SC220-40 / SC220-80 — İş Dosyası Rehberi - MSC Kullanım Rehberi</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/guide.css">
+    
+      <link rel="stylesheet" href="stylesheets/downloads.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sc220-40-sc220-80-is-dosyas-rehberi" class="md-skip">
+          Ana içeriğe geç
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Başlık">
+    <a href="index.html" title="MSC Kullanım Rehberi" class="md-header__button md-logo" aria-label="MSC Kullanım Rehberi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MSC Kullanım Rehberi
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SC220-40 / SC220-80 — İş Dosyası Rehberi
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <nav class="guide-language" aria-label="Dil seçimi">
+  
+    <a href="sc220_job_file_tr.html" lang="tr" hreflang="tr" aria-current="page">Türkçe</a>
+  
+    <a href="sc220_job_file_en.html" lang="en" hreflang="en">English</a>
+  
+</nav>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Ara" placeholder="Ara" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Ara">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Temizle" aria-label="Temizle" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Arama başlatılıyor
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasyon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="MSC Kullanım Rehberi" class="md-nav__button md-logo" aria-label="MSC Kullanım Rehberi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MSC Kullanım Rehberi
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Başlangıç
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    İş dosyaları
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    İş dosyaları
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nr_job_file_tr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NR241 / NR242 / NR210
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SC220-40 / SC220-80
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="sc220_job_file_tr.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SC220-40 / SC220-80
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dosyann-alanlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dosyanın alanları
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nccode-islem-makro-alan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        nccode — işlem / makro alanı
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="nccode — işlem / makro alanı">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nr241-ile-fark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NR241 ile farkı
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delik-ornegi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delik örneği
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ayn-parcada-birden-fazla-islem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aynı parçada birden fazla işlem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temsili-dosya" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temsili dosya
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aktarmdan-once-kontrol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aktarımdan önce kontrol
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Makine ayarları
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Makine ayarları
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="profile_definitions_tr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Profil tanımları
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="macro_mapping_tr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Makro eşleştirme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="endmilling_settings_tr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kertme ayarları
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dosyann-alanlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dosyanın alanları
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nccode-islem-makro-alan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        nccode — işlem / makro alanı
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="nccode — işlem / makro alanı">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nr241-ile-fark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NR241 ile farkı
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delik-ornegi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delik örneği
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ayn-parcada-birden-fazla-islem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aynı parçada birden fazla işlem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temsili-dosya" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temsili dosya
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aktarmdan-once-kontrol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aktarımdan önce kontrol
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sc220-40-sc220-80-is-dosyas-rehberi">SC220-40 / SC220-80 — İş Dosyası Rehberi</h1>
+<div class="document-tools">
+<p><a href="sc220_job_file_en.html">English</a> · <strong><a href="downloads/msc-sc220-job-file-tr.pdf">PDF indir</a></strong></p>
+</div>
+<p>Bu rehber, <strong>MSC arayüzü kullanılan SC220-40 ve SC220-80</strong> makinelerinin iş dosyasını açıklar. Dosya düzeni <strong>NR241 iş dosyasıyla birebir aynıdır</strong>; tek fark <code>nccode</code> alanındaki <strong>işlem / makro bloğunun yapısıdır</strong>.</p>
+<h2 id="dosyann-alanlar">Dosyanın alanları</h2>
+<p>Dosyada NR241 ile aynı <strong>30 sütun</strong> bulunur:</p>
+<pre><code class="language-text">id;ksn;ksnbar;ktn;ktnbar;l;r;code;info;width;height;trolley;box;orientation;reinf;reinfbar;pos;prono;offno;agent;customer;date;nccode;isfix;colorcode;colorinfo;mainprofile;subcust;image;DATA1
+</code></pre>
+<p>Alanların anlamı, çubuk ve parça sırası, boy ve açı gösterimi için <a href="nr_job_file_tr.html">NR241 / NR242 / NR210 rehberine</a> bakın. Kısaca:</p>
+<ul>
+<li>Her veri satırı bir kesilecek parçadır; aynı <code>ksn</code> değerini taşıyan satırlar aynı çubuktan kesilir.</li>
+<li><code>ksnbar</code> ve <code>ktnbar</code> değerlerinde son hane ondalıktır: <code>4710</code> = <strong>471,0 mm</strong>.</li>
+<li><code>l</code> ve <code>r</code> başlangıç ve bitiş kesim açılarıdır; tek sayı olarak yazılır (<code>45</code>, <code>135</code>).</li>
+<li>Bir alan boşsa o sütunun yerini koruyun; sonraki verileri sola kaydırmayın.</li>
+</ul>
+<h2 id="nccode-islem-makro-alan"><code>nccode</code> — işlem / makro alanı</h2>
+<p>SC220 makinelerinde her işlem <strong>12 karakterlik</strong> bir bloktur. Aynı parçada birden fazla işlem varsa bloklar art arda yazılır.</p>
+<pre><code class="language-text">H | 02 | 01 | 01 | 05000
+</code></pre>
+<p>Dikey çizgiler yalnız açıklama içindir; gerçek alanda bulunmaz.</p>
+<table>
+<thead>
+<tr>
+<th>Bölüm</th>
+<th>Karakter sırası</th>
+<th style="text-align: right;">Uzunluk</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>H</code></td>
+<td>1</td>
+<td style="text-align: right;">1</td>
+<td>Blok başlangıç karakteri</td>
+</tr>
+<tr>
+<td><code>02</code></td>
+<td>2–3</td>
+<td style="text-align: right;">2</td>
+<td>Tool kodu</td>
+</tr>
+<tr>
+<td><code>01</code></td>
+<td>4–5</td>
+<td style="text-align: right;">2</td>
+<td>Operasyon kodu</td>
+</tr>
+<tr>
+<td><code>01</code></td>
+<td>6–7</td>
+<td style="text-align: right;">2</td>
+<td>Aksesuar kodu</td>
+</tr>
+<tr>
+<td><code>05000</code></td>
+<td>8–12</td>
+<td style="text-align: right;">5</td>
+<td>İşlem konumu; son hane ondalıktır: <strong>500,0 mm</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Bu örneğin tam gösterimi:</p>
+<pre><code class="language-text">H02010105000
+</code></pre>
+<p>Baştaki sıfırları koruyun: Tool <code>2</code> değil <code>02</code>, konum <code>5000</code> değil <code>05000</code> yazılır.</p>
+<h3 id="nr241-ile-fark">NR241 ile farkı</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>NR241 / NR242 / NR210</th>
+<th>SC220-40 / SC220-80</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blok uzunluğu</td>
+<td>18 karakter</td>
+<td><strong>12 karakter</strong></td>
+</tr>
+<tr>
+<td>Tool kodu</td>
+<td>3 hane (<code>002</code>)</td>
+<td><strong>2 hane</strong> (<code>02</code>)</td>
+</tr>
+<tr>
+<td>Operasyon / Aksesuar</td>
+<td>2 + 2 hane</td>
+<td>2 + 2 hane</td>
+</tr>
+<tr>
+<td>Konum</td>
+<td>5 hane, 0,1 mm</td>
+<td>5 hane, 0,1 mm</td>
+</tr>
+<tr>
+<td>Kanal boyu</td>
+<td>5 hane</td>
+<td><strong>Yok</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Aynı işlem iki biçimde şöyle yazılır:</p>
+<pre><code class="language-text">NR241 : H00201010500001000
+SC220 : H02010105000
+</code></pre>
+<p>NR biçimindeki bir <code>nccode</code> alanını SC220 makinesine olduğu gibi aktarmayın; bloklar yanlış okunur.</p>
+<h3 id="delik-ornegi">Delik örneği</h3>
+<pre><code class="language-text">H16010110000
+</code></pre>
+<p>Tool <strong><code>16</code></strong>, Operasyon <strong><code>01</code></strong>, Aksesuar <strong><code>01</code></strong>; konum <strong>1000,0 mm</strong>.</p>
+<h3 id="ayn-parcada-birden-fazla-islem">Aynı parçada birden fazla işlem</h3>
+<pre><code class="language-text">H02010105000H16010110000
+</code></pre>
+<p>İki adet 12 karakterlik blok, toplam <strong>24 karakter</strong>. Bloklar <code>H</code> karakterinden ayrılır; bu yüzden blok içinde <code>H</code> kullanılmaz.</p>
+<p>Bir blok 12 karakterden kısa veya sayısal olmayan karakter içeriyorsa makine o parçanın <strong>hiçbir işlemini</strong> okuyamaz. Kesim boyları doğru olsa bile işlemler eksik kalır.</p>
+<p>Bu kodlar örnektir; her profil ve makine için evrensel bir işlem kodu listesi değildir. İşlem kodunun makinedeki karşılığını <a href="macro_mapping_tr.html">Makro Eşleştirme</a> ve profilin işlem tanımlarıyla birlikte kontrol edin.</p>
+<h2 id="temsili-dosya">Temsili dosya</h2>
+<p><a href="downloads/SC220_Job_Example.csv">30 sütunlu SC220 örnek CSV'sini indir</a></p>
+<p>Örnekte bayi, müşteri, sipariş, profil ve görsel yolu temsili değerlerdir. Ayırıcı <code>;</code> kullanılmıştır. Üretimden önce kendi makinenizin profil, işlem ve aktarım ayarlarıyla eşleştirin.</p>
+<h2 id="aktarmdan-once-kontrol">Aktarımdan önce kontrol</h2>
+<ol>
+<li>Sütun başlıklarını ve satırlardaki alan sayısını NR241 düzeniyle karşılaştırın.</li>
+<li>Çubuk numarası, çubuk içi parça sırası, çubuk / parça boyları ve kesim açılarını kontrol edin.</li>
+<li><code>nccode</code> bloklarının <strong>12 karakter</strong> olduğunu ve Tool kodunun <strong>2 hane</strong> yazıldığını kontrol edin; baştaki sıfırları koruyun.</li>
+<li>Dosyanın NR biçiminde (18 karakterlik bloklar) hazırlanmadığından emin olun.</li>
+<li>Aktarımdan sonra parça listesinde boyları ve işlem görünümünü kontrol edin.</li>
+</ol>
+<p><a href="index.html">MSC ana sayfası</a> · <a href="nr_job_file_tr.html">NR241 / NR242 / NR210</a> · <a href="macro_mapping_tr.html">Makro Eşleştirme</a></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Başa dön
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.expand", "navigation.top", "search.highlight"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Kopyaland\u0131", "clipboard.copy": "Kopyala", "search.result.more.one": "Bu sayfada 1 tane daha", "search.result.more.other": "Bu sayfada # tane daha", "search.result.none": "E\u015fle\u015fen dok\u00fcman bulunamad\u0131", "search.result.one": "1 dok\u00fcman bulundu", "search.result.other": "# dok\u00fcman bulundu", "search.result.placeholder": "Aramaya ba\u015flamak i\u00e7in yaz\u0131n", "search.result.term.missing": "Eksik", "select.version": "Versiyon se\u00e7"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
